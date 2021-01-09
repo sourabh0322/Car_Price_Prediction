@@ -7,7 +7,7 @@ import numpy as np
 import sklearn
 
 app = Flask(__name__)
-model = joblib.load("save_model")
+model = joblib.load("save_models.pkl")
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
